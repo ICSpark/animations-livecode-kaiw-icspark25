@@ -5,6 +5,8 @@
 
 body {
     background-color: white;
+    animation-name:background;
+    animation-duration: 1s;
 }
 
 #description {
@@ -24,3 +26,18 @@ body {
 .pizza-img {
     width: 100px;
 }
+.pizza-img:hover{
+filter: brightness(0.8);
+}
+.pizza-img:active{
+    opacity:0.8;
+}
+#description:hover{
+font-size:18px;
+transition:font-size 0.3s ease;
+}
+@keyframes background{
+    from {background-color:black;}
+    to {background-color:white;}
+}
+
